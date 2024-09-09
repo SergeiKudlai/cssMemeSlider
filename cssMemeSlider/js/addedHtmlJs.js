@@ -32,7 +32,9 @@ export function setRenderHtml() {
         <div class="slider__dots">
             ${data.map((_, index) =>
         `
-            <button class="slider__dots-element" type="button" data-dots-index=${index}></button>
+            <button class="slider__dots-element" type="button" data-dots-index=${index}>
+                <span class="slider__dots-intro" data-dots-index=${index} data-dots-intro></span>
+            </button>
         `
     ).join('')}
         </div>
