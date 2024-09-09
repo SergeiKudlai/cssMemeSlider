@@ -1,6 +1,6 @@
 import { data } from './data.js';
 
-export function RenderHtml() {
+export function setRenderHtml() {
     const pageWrapper = document.querySelector('[data-wrapper]');
     const htmlSliderInner = document.createElement('div');
     const htmlSlider = document.createElement('div');
@@ -15,11 +15,9 @@ export function RenderHtml() {
     document.querySelector('[data-slider]').prepend(htmlSliderInner);
 
 
-
-
-    const html = data.map(({ img, title }, index) =>
+    const html = data.map(({ img, title }) =>
         `
-        <article class="slider__box" data-slider-box data-box-index=${index}>
+        <article class="slider__box" data-slider-box>
             <h2 class="slider__title">${title}</h2>
 
             <div class="slider__images-box">
@@ -34,7 +32,7 @@ export function RenderHtml() {
         <div class="slider__dots">
             ${data.map((_, index) =>
         `
-            <button class="slider__dots-element" type="button" data-dots-index=${index}>${++index}</button>
+            <button class="slider__dots-element" type="button" data-dots-index=${index}></button>
         `
     ).join('')}
         </div>

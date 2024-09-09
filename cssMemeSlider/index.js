@@ -1,3 +1,5 @@
-import { RenderHtml } from './js/addedHtmlJs.js';
+import { setRenderHtml } from './js/addedHtmlJs.js';
+import { setSlidersActive } from './js/sliderActive.js';
 
-RenderHtml();
+setRenderHtml();
+setSlidersActive();
