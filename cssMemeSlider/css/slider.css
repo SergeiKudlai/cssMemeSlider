@@ -1,0 +1,27 @@
+.wrapper {
+    background-color: green;
+    height: 100vh;
+}
+
+.slider__inner {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slider {
+    flex: 1 0 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.slider__title {
+    align-self: center;
+}
+
+.slider__images-box {
+    align-self: center;
+    max-width: 50rem;
+}
