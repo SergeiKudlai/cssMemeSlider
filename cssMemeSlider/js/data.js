@@ -19,5 +19,4 @@ export const data = [
         img: './images/5.jpg',
         title: 'slider_five'
     },
-
 ]
